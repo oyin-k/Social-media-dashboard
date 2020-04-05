@@ -1,0 +1,19 @@
+{
+  "name": "social-media-dashboard",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oyin-k/Social-media-dashboard.git"
+  },
+  "author": "Oyin-k",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oyin-k/Social-media-dashboard/issues"
+  },
+  "homepage": "https://github.com/oyin-k/Social-media-dashboard#readme"
+}
