@@ -4,7 +4,7 @@
   "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass src/sass/main.scss dist/css/main.css -w"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/oyin-k/Social-media-dashboard/issues"
   },
-  "homepage": "https://github.com/oyin-k/Social-media-dashboard#readme"
+  "homepage": "https://github.com/oyin-k/Social-media-dashboard#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
 }
