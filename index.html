@@ -29,20 +29,26 @@
 <body>
 
   <div class="container">
-    <header>
+    <header class="header">
       <div class="header__text-box">
-        <h1>Social Media Dashboard</h1>
-        <span>Total Followers: 23,004</span>
+        <h1 class="header__main-title">Social Media Dashboard</h1>
+        <span class="header__sub-title">Total Followers: 23,004</span>
       </div>
       <div class="toggle-box">
-        <span>Dark Mode</span>
+        <span class="toggle-ui-state">Dark Mode</span>
+        <div class="toggle">
+          <label class="toggle-switch-box">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
       </div>
       
     </header>
     
     <section class="followers">
       <div class="card facebook">
-        <span class="user-name">@nathanf</span>
+        <span class="user-name"> <img src="images/icon-facebook.svg" class="activity" alt="facebook-logo"> @nathanf</span>
         <h2 class="user-following-number">1987</h2>
         <h5 class="user--subtitle">Followers</h5>
         <span class="user-stat up">
@@ -51,7 +57,7 @@
         </span>
       </div>
       <div class="card twitter">
-        <span class="user-name">@nathanf</span>
+        <span class="user-name"> <img src="images/icon-twitter.svg" class="activity" alt="twitter-logo"> @nathanf</span>
         <h2 class="user-following-number">1044</h2>
         <h5 class="user--subtitle">Followers</h5>
         <span class="user-stat up">
@@ -60,7 +66,7 @@
         </span>
       </div>
       <div class="card instagram">
-        <span class="user-name">@realnathanf</span>
+        <span class="user-name"> <img src="images/icon-instagram.svg" class="activity" alt="instagram-logo"> @realnathanf</span>
         <h2 class="user-following-number">11k</h2>
         <h5 class="user--subtitle">Followers</h5>
         <span class="user-stat up">
@@ -69,7 +75,7 @@
         </span>
       </div>
       <div class="card youtube">
-        <span class="user-name">Nathan F.</span>
+        <span class="user-name"> <img src="images/icon-youtube.svg" class="activity" alt="youtube-logo"> Nathan F.</span>
         <h2 class="user-following-number">8239</h2>
         <h5 class="user--subtitle">Subscribers</h5>
         <span class="user-stat down">

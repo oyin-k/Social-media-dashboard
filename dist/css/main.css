@@ -19,11 +19,42 @@ body {
   background: #1e202a;
   color: white; }
 
-.container header__text-box h1 {
-  margin-bottom: 1.2rem; }
+.container .header__main-title {
+  margin-bottom: .8rem;
+  font-size: 2.8rem;
+  font-weight: 700; }
+
+.container .header__sub-title {
+  font-weight: 700; }
+
+.container .header .toggle-ui-state {
+  font-weight: 700; }
+
+.container .followers .user-name {
+  padding: 2.8rem 0;
+  font-size: 1.2rem;
+  font-weight: 700; }
+
+.container .followers .user-following-number {
+  margin-bottom: .6rem;
+  font-size: 5.6rem;
+  font-weight: 700; }
+
+.container .followers .user--subtitle {
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.672rem;
+  text-transform: uppercase; }
+
+.container .followers .user-stat {
+  padding: 2.8rem 0;
+  font-size: 1.2rem;
+  font-weight: 700; }
 
 .container .overview .heading {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  font-size: 2.4rem; }
 
 .container .overview__info .card-overview .activity-title {
   font-size: 1.4rem;
@@ -38,8 +69,9 @@ body {
   font-weight: 700; }
 
 .container {
-  height: 100vh;
-  padding: 0 16.0rem; }
+  height: 100%;
+  padding: 0 16.0rem;
+  margin-bottom: 5rem; }
   .container header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -48,12 +80,20 @@ body {
     margin-bottom: .8rem; }
     .container header .toggle-box {
       display: grid;
-      justify-items: end; }
+      justify-items: end;
+      grid-template-columns: 1fr 4.8rem; }
+    .container header .toggle-ui-state {
+      align-self: center;
+      padding-right: 2rem; }
   .container .followers {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
     margin-bottom: 5rem; }
+    .container .followers .user-name {
+      display: grid;
+      grid-template-columns: 30px 60px;
+      align-items: center; }
   .container .overview__info {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -65,6 +105,13 @@ body {
 
 .down {
   color: #dc414c; }
+
+.header__sub-title,
+.toggle-ui-state,
+.user-name,
+.user--subtitle,
+.activity-title {
+  color: #8b97c6; }
 
 .card {
   display: flex;
@@ -78,27 +125,6 @@ body {
   grid-template: 1fr 1fr / 1fr 1fr;
   grid-gap: 1.6rem;
   padding: 2.6rem; }
-
-.card .user-name {
-  padding: 2.8rem 0;
-  font-size: 1.2rem;
-  font-weight: 700; }
-
-.card .user-following-number {
-  margin-bottom: .6rem;
-  font-size: 5.6rem;
-  font-weight: 700; }
-
-.card .user--subtitle {
-  margin-bottom: 0.2rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  letter-spacing: 0.672rem; }
-
-.card .user-stat {
-  padding: 2.8rem 0;
-  font-size: 1.2rem;
-  font-weight: 700; }
 
 .facebook::before, .twitter::before, .youtube::before {
   content: '';
@@ -131,6 +157,52 @@ body {
 
 .youtube::before {
   border-color: #c4032a; }
+
+.toggle-switch-box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 2.4rem; }
+  .toggle-switch-box input {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  .toggle-switch-box .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: -54px;
+    right: 0;
+    bottom: 0;
+    width: 5rem;
+    background: linear-gradient(to right, #378fe6, #3eda82);
+    transition: .4s; }
+    .toggle-switch-box .slider:before {
+      position: absolute;
+      content: "";
+      height: 1.8rem;
+      width: 1.8rem;
+      left: 3px;
+      bottom: 3px;
+      background-color: #1e202a;
+      transition: .4s; }
+
+.toggle input:checked + .slider {
+  background: linear-gradient(to right, #378fe6, #3eda82); }
+
+.toggle input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+.toggle input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
+
+.toggle .slider.round {
+  border-radius: 34px; }
+
+.toggle .slider.round:before {
+  border-radius: 50%; }
 
 /*
 .declaration-order {

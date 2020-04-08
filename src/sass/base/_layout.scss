@@ -1,6 +1,7 @@
 .container {
-    height: 100vh;
+    height: 100%;
     padding: 0 16.0rem;
+    margin-bottom: 5rem;
 
     header {
         display: grid;
@@ -9,9 +10,16 @@
         padding: 4rem 0;
         margin-bottom: .8rem;
 
-        .toggle-box {
-            display: grid;
-            justify-items: end
+        .toggle {
+            &-box {
+                display: grid;
+                justify-items: end;
+                grid-template-columns: 1fr 4.8rem;
+            }
+            &-ui-state {
+                align-self: center;
+                padding-right: 2rem;
+            }
         }
     }
 
@@ -20,6 +28,12 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
         margin-bottom: 5rem;
+
+        .user-name {
+            display: grid;
+            grid-template-columns: 30px 60px;
+            align-items: center;
+        }
     }
 
     .overview {

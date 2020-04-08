@@ -13,29 +13,6 @@
     padding: 2.6rem;
 }
 
-%card-details {
-    .user-name {
-        padding: 2.8rem 0;
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
-    .user-following-number{
-        margin-bottom: .6rem;
-        font-size: 5.6rem;
-        font-weight: 700;
-    }
-    .user--subtitle{
-        margin-bottom: 0.2rem;
-        font-size: 1.2rem;
-        font-weight: 400;
-        letter-spacing: 0.672rem;
-    }
-    .user-stat{
-        padding: 2.8rem 0;
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
-}
 
 %card-top-bar {
     content: '';
@@ -46,7 +23,6 @@
 
 .card {
     @extend %card;
-    @extend %card-details;
 }
 
 .card-overview {

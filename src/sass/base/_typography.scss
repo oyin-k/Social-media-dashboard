@@ -7,17 +7,52 @@ body {
 }
 
 .container {
-    header {
-        &__text-box {
-            h1 {
-                margin-bottom: 1.2rem;
+    .header {
+        &__main-title {
+            margin-bottom: .8rem;
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+        &__sub-title {
+            font-weight: 700;
+        }
+
+        .toggle {
+            &-ui-state {
+                font-weight: 700;
             }
         }
     }
-
+    .followers {
+        .user {
+            &-name {
+                padding: 2.8rem 0;
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+            &-following-number{
+                margin-bottom: .6rem;
+                font-size: 5.6rem;
+                font-weight: 700;
+            }
+            &--subtitle{
+                margin-bottom: 0.2rem;
+                font-size: 1.2rem;
+                font-weight: 400;
+                letter-spacing: 0.672rem;
+                text-transform: uppercase;
+            }
+            &-stat{
+                padding: 2.8rem 0;
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+        }
+    }
     .overview {
         .heading {
             margin-bottom: 3rem;
+            font-size: 2.4rem;
         }
         &__info {
             .card-overview {
