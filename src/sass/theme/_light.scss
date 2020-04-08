@@ -1,0 +1,48 @@
+body.light {
+    background: $color-white;
+
+    .header__main-title,
+    .heading h3 {
+        color: $color-dark-blue-bg;
+    }
+
+    .header__sub-title,
+    .toggle-ui-state,
+    .user-name,
+    .user--subtitle,
+    .activity-title {
+        color: $color-dark-grayish-blue-text;
+    }
+    .toggle {
+        &-switch-box {
+            .slider {
+                background: $light-theme;
+            }
+            .slider:before {
+                background-color: $color-white;
+            }
+        }
+    }
+
+    .followers {
+        .card {
+            .user-following-number {
+                color: $color-dark-blue-bg;
+            }
+        }
+    }
+
+    .overview {
+        &__info {
+            .activity-number {
+                color: $color-dark-blue-bg;
+            }
+        }
+    }
+
+    .card {
+        background-color: $color-light-grayish-blue-card-bg;
+    }
+       
+}
+
