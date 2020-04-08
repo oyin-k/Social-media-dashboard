@@ -1,7 +1,6 @@
 const body = document.querySelector('body');
 const toggle = document.querySelector('.toggle-switch');
 const themeState = document.querySelector('.toggle-ui-state');
-console.log(themeState.innerHTML);
 
 function changeTheme() {
     body.classList.toggle('light');
