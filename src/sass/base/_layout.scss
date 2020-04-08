@@ -1,0 +1,33 @@
+.container {
+    height: 100vh;
+    padding: 0 16.0rem;
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 4rem 0;
+        margin-bottom: .8rem;
+
+        .toggle-box {
+            display: grid;
+            justify-items: end
+        }
+    }
+
+    .followers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .overview {
+        &__info {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 2rem;
+        }
+    }
+}
